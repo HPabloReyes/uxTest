@@ -1,0 +1,100 @@
+<form>
+  <label for="id_proyecto">ID proyecto:</label>
+  <br />
+  <input
+    type="text"
+    id="id_proyecto"
+    name="id_proyecto"
+    class="field"
+    style="width: 50%; margin: 0 30px 0 0"
+  />
+
+  <button
+    class="fstbton"
+    type="submit"
+    id="buscar_proyecto"
+    name="buscar_proyecto"
+  >
+    Buscar proyecto</button
+  ><br /><br />
+
+  <label for="nombre_proyecto">Nombre del proyecto:</label>
+  <input
+    type="text"
+    id="nombre_proyecto"
+    class="field"
+    name="nombre_proyecto"
+    style="background-color: #eaeaea"
+  /><br /><br />
+
+  <label for="descripcion">Descripción del proyecto:</label>
+  <textarea
+    id="descripcion"
+    class="field"
+    name="descripcion"
+    style="background-color: #eaeaea; height: 15px"
+  ></textarea
+  ><br /><br />
+
+  <div style="display: flex; margin: 0 0 10px 0">
+    <div style="width: 50%; margin-right: 10px">
+      <label for="fecha_creacion">Fecha de creación:</label>
+      <input
+        type="date"
+        class="field"
+        id="fecha_creacion"
+        name="fecha_creacion"
+        style="background-color: #eaeaea; width: 92%"
+      />
+    </div>
+
+    <div style="width: 25%; margin-left: 10px">
+      <label for="capex">Capex:</label>
+      <input
+        type="text"
+        class="field"
+        id="capex"
+        name="capex"
+        style="background-color: #eaeaea; width: 88%"
+      />
+    </div>
+
+    <div style="width: 25%; margin-left: 10px">
+      <label for="opex">Opex:</label>
+      <input
+        type="text"
+        class="field"
+        id="opex"
+        name="opex"
+        style="background-color: #eaeaea; width: 88%"
+      />
+    </div>
+  </div>
+
+  <div style="display: flex">
+    <div style="width: 50%">
+      <label for="pilar_proyecto">Pilar del proyecto:</label>
+      <input
+        type="text"
+        class="field"
+        id="pilar_proyecto"
+        name="pilar_proyecto"
+        style="width: 90%"
+        id="bottom"
+      />
+    </div>
+    <div style="width: 50%">
+      <label for="clasificacion_comite" style="margin-left: 9px"
+        >Clasificación del comité de inversión:</label
+      >
+      <input
+        class="field"
+        type="text"
+        id="clasificacion_comite"
+        name="clasificacion_comite"
+        style="width: 90%; float: right"
+        id="bottom"
+      />
+    </div>
+  </div>
+</form>

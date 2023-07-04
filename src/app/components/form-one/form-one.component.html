@@ -1,0 +1,96 @@
+<div>
+  <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+    <label for="id_sistema">ID Sistema ORC's:</label><br />
+    <input
+      type="text"
+      id="id_sistema"
+      name="id_sistema"
+      required
+      class="field"
+      style="background-color: #eaeaea"
+      placeholder="0"
+      [(ngModel)]="formData.id_sistema"
+    /><br /><br />
+
+    <label for="nombre_proyecto">Nombre del proyecto:</label><br />
+    <input
+      type="text"
+      id="nombre_proyecto"
+      name="nombre_proyecto"
+      required
+      class="field"
+      [(ngModel)]="formData.nombre_proyecto"
+    /><br /><br />
+
+    <label for="descripcion">Descripción del proyecto:</label><br />
+    <textarea
+      id="descripcion"
+      name="descripcion"
+      rows="4"
+      cols="50"
+      required
+      class="field"
+      style="height: 15px"
+      [(ngModel)]="formData.descripcion"
+    ></textarea
+    ><br /><br />
+
+    <label for="objetivos">Objetivos a los que contribuye el proyecto:</label
+    ><br />
+    <div class="select">
+      <select
+        id="objetivos"
+        name="objetivos"
+        required
+        class="field"
+        style="width: 98%"
+        [(ngModel)]="formData.objetivos"
+      >
+        <option value="" disabled selected>Seleccione un objetivo</option>
+        <option *ngFor="let opcion of opciones" [value]="opcion">
+          {{ opcion }}
+        </option>
+      </select>
+    </div>
+    <br /><br />
+
+    <div style="display: flex">
+      <div style="width: 50%">
+        <label for="fecha_inicio">Fecha de inicio</label>
+        <i
+          class="fa-solid fa-circle-exclamation"
+          style="color: rgb(254, 199, 2); margin-left: 7px"
+        ></i>
+        <input
+          type="date"
+          id="fecha_inicio"
+          name="fecha_inicio"
+          required
+          class="field"
+          style="width: 90%"
+          [(ngModel)]="formData.fecha_inicio"
+        />
+      </div>
+      <div style="width: 50%">
+        <label for="fecha_fin">Fecha de fin</label>
+        <i
+          class="fa-solid fa-circle-exclamation"
+          style="color: rgb(254, 199, 2); margin-left: 7px"
+        ></i>
+        <br />
+        <input
+          type="date"
+          id="fecha_fin"
+          name="fecha_fin"
+          required
+          class="field"
+          style="width: 90%"
+          [(ngModel)]="formData.fecha_fin"
+        />
+      </div>
+    </div>
+    <br /><br />
+
+    <input class="fstbton" type="submit" value="Propiedad del proyecto" />
+  </form>
+</div>

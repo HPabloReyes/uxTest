@@ -1,0 +1,32 @@
+input,
+textarea {
+  outline: none;
+  border: 0;
+  border-radius: 7px;
+  width: 95%;
+  resize: none;
+}
+
+.field {
+  border: solid 1px #ccc;
+  padding: 10px;
+  margin: 15px 0 0 0;
+}
+
+.fstbton {
+  border: none;
+  width: 20%;
+  background-color: rgb(254, 199, 2);
+  padding: 10px 30px 10px 30px;
+  border-radius: 30px;
+}
+
+.flex-container {
+  display: flex;
+  margin-top: 60px;
+}
+
+.flex-item {
+  flex-grow: 1;
+  margin-right: 10px;
+}

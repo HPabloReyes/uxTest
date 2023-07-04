@@ -1,0 +1,15 @@
+.container {
+  margin-top: 20px;
+  display: flex;
+  height: 20px;
+}
+
+.buttoncontainer {
+  display: flex;
+  padding: 6px 3px 6px 3px;
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+  border-radius: 3px;
+  background-color: rgb(254, 199, 2);
+  margin: 0 5px 0 0;
+}
